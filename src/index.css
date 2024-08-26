@@ -1,24 +1,20 @@
 @font-face {
-  font-family: "Amatic";
-  src: url(./assets/fonts/Amatic_SC/AmaticSC-Regular.ttf);
+  font-family: "Mona";
+  src: url(./assets/fonts/Mona\ Sans/Mona-Sans.ttf);
 }
 @font-face {
-  font-family: "Matemasie";
-  src: url(./assets/fonts/Matemasie/Matemasie/Matemasie-Regular.ttf);
-}
-@font-face {
-  font-family: "Serif-Regular";
-  src: url(./assets/fonts/DM_Serif_Text/DMSerifText-Regular.ttf);
+  font-family: "Unique";
+  src: url(./assets/fonts/Unique/Web-TT/Unique-Bold.ttf);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Serif-Regular";
+  font-family: "Mona";
   text-decoration: none;
   list-style: none;
   color: white;
 }
 body {
   background-color: #0b5f4e;
-}
+} 

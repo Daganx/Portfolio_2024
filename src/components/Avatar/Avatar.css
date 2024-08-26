@@ -1,0 +1,18 @@
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.avatar {
+  height: 400px;
+  width: 400px;
+  background-size: cover;
+  cursor: pointer;
+  animation: slideInRight 1s ease-out forwards;
+  transition: transform 0.3s ease;
+}

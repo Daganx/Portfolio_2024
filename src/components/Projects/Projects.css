@@ -1,0 +1,64 @@
+.projects-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafbfb;
+  position: relative;
+  overflow-y: auto;
+  transition: filter 0.8s ease-in-out;
+  gap: 25px;
+  border-bottom: 5px solid orange;
+}
+.project-container {
+  border-bottom: 2px solid orange;
+  width: 70%;
+  gap: 10px;
+  position: relative;
+}
+.project-container p {
+  font-size: 4.5rem;
+  color: black;
+  cursor: pointer;
+}
+.project-preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  background-color: rgba(248, 248, 248, 0.975);
+  transform: translateY(100%);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  z-index: 10;
+  opacity: 0;
+  border-top: 5px solid orange;
+}
+.project-container.active .project-preview {
+  transform: translateY(0);
+  opacity: 1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+  backdrop-filter: blur(10px);
+}
+.overlay.active {
+  display: block;
+}
+.close-button {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  height: 30px;
+  width: 30px;
+}

@@ -4,15 +4,29 @@ nav {
   justify-content: space-between;
   height: 10vh;
   width: 100%;
-  border: 2px solid black;
+  border-bottom: 5px solid orange;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.978);
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 .nav-name {
   margin-left: 32px;
   font-size: xx-large;
+  color: black;
 }
 .nav-links {
   display: flex;
   align-items: center;
   gap: 50px;
   margin-right: 32px;
+}
+.nav-links a {
+  color: black;
+  font-size: x-large;
+}
+.nav-links a:hover {
+  padding-top: 2px;
+  border-bottom: 2px solid orange;
 }

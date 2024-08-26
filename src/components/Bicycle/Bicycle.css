@@ -1,0 +1,61 @@
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.bicycle-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+}
+.bicycle-animation {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  animation: moveRight 5s cubic-bezier(0.25, 0.5, 0.25, 0.5) forwards;
+}
+#svg {
+  width: 40%;
+}
+.cls-1 {
+  fill: orange;
+}
+.cls-2 {
+  fill: #e3e3e3;
+}
+
+.cls-3 {
+  fill: #f28c1d;
+}
+.cls-4 {
+  stroke: orange;
+  stroke-width: 2;
+  fill: none;
+}
+.cls-5 {
+  fill: #999;
+}
+.cls-6 {
+  fill: #e3e3e3;
+}
+.cls-7 {
+  fill: #b3b3b3;
+}
+.cls-8 {
+  fill: #6b6b6b;
+}
+.cls-9 {
+  fill: #ccc;
+}
+.cls-10 {
+  fill: #f2f2f2;
+}
