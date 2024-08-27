@@ -1,18 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 
 import Modal from "../Modal/Modal";
 import "./Projects.css";
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
-  const [modalActive, setModalActive] = useState(false); // Nouvel état pour gérer l'animation
+  const [modalActive, setModalActive] = useState(false);
 
   const handleOpenModal = (projectId) => {
     setActiveProject(projectId);
 
     setTimeout(() => {
       setModalActive(true);
-    }, 50); // Délai court pour déclencher l'animation
+    }, 50);
   };
 
   const handleCloseModal = () => {
@@ -20,7 +20,7 @@ export default function Projects() {
 
     setTimeout(() => {
       setActiveProject(null);
-    }, 800); // Correspond à la durée de l'animation de fermeture
+    }, 800);
   };
 
   return (
@@ -31,11 +31,16 @@ export default function Projects() {
         handleCloseModal={handleCloseModal}
       />
 
-      <section className={`projects-section ${activeProject !== null ? "blur" : ""}`} id="projects-section">
-        {["#1", "#2", "#3", "#4", "#5"].map((project, index) => (
+      <section
+        className={`projects-section ${activeProject !== null ? "blur" : ""}`}
+        id="projects-section"
+      >
+        {["#1", "#2", "#3"].map((project, index) => (
           <article
             key={index}
-            className={`project-container ${activeProject === index ? "active" : ""}`}
+            className={`project-container ${
+              activeProject === index ? "active" : ""
+            }`}
             onClick={() => handleOpenModal(index)}
           >
             <p>PROJET {project}</p>

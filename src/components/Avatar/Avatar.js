@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import avatar from "../../assets/images/cuteavatar.svg";
+import avatar from "../../assets/images/cuteAvatar.svg";
 import avatarSmile from "../../assets/images/smileavatar.svg";
 import githubImage from "../../assets/images/githubImage.svg";
 import "./Avatar.css";

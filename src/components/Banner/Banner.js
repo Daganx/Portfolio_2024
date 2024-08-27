@@ -6,7 +6,6 @@ import JavascriptLogo from "../../assets/images/jsLogo.svg";
 import NodeLogo from "../../assets/images/nodeLogo.svg";
 import GithubLogo from "../../assets/images/githubLogo.svg";
 import BordeauxVideo from "../../assets/videos/bordeauxBackground.mp4";
-import CurvedArrow from "../../assets/images/curvedArrow.svg";
 import "./Banner.css";
 
 export default function Banner() {
@@ -34,9 +33,19 @@ export default function Banner() {
   }, []);
 
   return (
-    <section className={`hero-banner ${showVideo ? "video-active" : ""}`}>
+    <section
+      id="hero-banner"
+      className={`hero-banner ${showVideo ? "video-active" : ""}`}
+    >
       {showVideo && (
-        <video className="background-video" autoPlay loop muted playsInline>
+        <video
+          className="background-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
           <source src={BordeauxVideo} type="video/mp4" />
         </video>
       )}
@@ -91,7 +100,6 @@ export default function Banner() {
             onClick={handleGithubClick}
             loading="lazy"
           />
-          <img src={CurvedArrow} className="side-logo curved-arrow" loading="lazy" />
         </aside>
       </div>
       <Bicycle />

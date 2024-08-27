@@ -15,6 +15,7 @@ nav {
   margin-left: 32px;
   font-size: xx-large;
   color: black;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
@@ -25,6 +26,7 @@ nav {
 .nav-links a {
   color: black;
   font-size: x-large;
+  cursor: pointer;
 }
 .nav-links a:hover {
   padding-top: 2px;

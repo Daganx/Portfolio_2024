@@ -5,7 +5,9 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav>
-      <p className="nav-name">/ Portfolio.™</p>
+      <Link to="hero-banner" smooth={true} duration={500} className="nav-name">
+        / Portfolio.™
+      </Link>
       <ul>
         <li className="nav-links">
           <Link to="projects-section" smooth={true} duration={500}>
