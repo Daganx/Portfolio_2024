@@ -1,0 +1,15 @@
+.footer {
+  border-top: 5px solid orange;
+  border-bottom: 5px solid orange;
+  background-color: white;
+  color: black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.logo-footer {
+  height: 50px;
+  width: 50px;
+}

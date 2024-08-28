@@ -3,6 +3,7 @@ import Banner from "../components/Banner/Banner";
 import Projects from "../components/Projects/Projects";
 import Contact from "../components/Contact/Contact";
 import Loader from "../components/Loader/Loader";
+import Footer from "../components/Footer/Footer";
 
 export default function Index() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ export default function Index() {
           <Banner />
           <Projects />
           <Contact />
+          <Footer />
         </>
       )}
     </>

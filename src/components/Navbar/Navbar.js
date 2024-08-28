@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav>
       <Link to="hero-banner" smooth={true} duration={500} className="nav-name">
-        / Portfolio.™
+        / Portfolio.
       </Link>
       <ul>
         <li className="nav-links">

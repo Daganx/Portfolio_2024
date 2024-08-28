@@ -56,21 +56,6 @@ export default function Form() {
       </div>
 
       <div className="form-group">
-        <label htmlFor="phone">Téléphone</label>
-        <input
-          type="tel"
-          id="phone"
-          {...register("phone", {
-            required: true,
-            pattern: /^\d{10}$/,
-          })}
-        />
-        {errors.phone && (
-          <span>Veuillez entrer un numéro de téléphone valide</span>
-        )}
-      </div>
-
-      <div className="form-group">
         <label htmlFor="message">Message</label>
         <textarea id="message" {...register("message", { required: true })} />
         {errors.message && <span>Ce champ est requis</span>}

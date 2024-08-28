@@ -67,6 +67,12 @@
   position: relative;
   z-index: 1;
 }
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75%;
+}
 .text-container h1 {
   font-size: 10rem;
   color: white;
@@ -87,22 +93,35 @@
 }
 .text-container h3 {
   font-size: 1.17em;
-  color: orange;
+  color: white;
   cursor: pointer;
+  animation: bounce 3s infinite;
 }
 .text-container h4 {
   font-size: 1.17em;
-  color: orange;
+  color: white;
 }
 .text-container h5 {
   font-size: 1.17em;
   padding-top: 16px;
+  padding-bottom: 32px;
+}
+.text-logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
 }
 .text-info {
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 32px;
   gap: 100px;
+}
+.logo-presentation {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
 }
 .logo-container {
   display: flex;

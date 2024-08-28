@@ -14,7 +14,7 @@ nav {
 .nav-name {
   margin-left: 32px;
   font-size: xx-large;
-  color: black;
+  color: rgb(3, 3, 3);
   cursor: pointer;
 }
 .nav-links {
@@ -24,7 +24,7 @@ nav {
   margin-right: 32px;
 }
 .nav-links a {
-  color: black;
+  color: rgb(3, 3, 3);
   font-size: x-large;
   cursor: pointer;
 }

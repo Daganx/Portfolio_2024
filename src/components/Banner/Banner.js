@@ -5,6 +5,8 @@ import ReactLogo from "../../assets/images/reactLogo.svg";
 import JavascriptLogo from "../../assets/images/jsLogo.svg";
 import NodeLogo from "../../assets/images/nodeLogo.svg";
 import GithubLogo from "../../assets/images/githubLogo.svg";
+import LinkedinLogo from "../../assets/images/linkedinLogo.svg";
+import TwitterLogo from "../../assets/images/twitterLogo.svg";
 import BordeauxVideo from "../../assets/videos/bordeauxBackground.mp4";
 import "./Banner.css";
 
@@ -58,6 +60,29 @@ export default function Banner() {
             <br />
             je recherche un poste en tant que FrontDev.
           </h5>
+          <div className="text-logo-container">
+            <a
+              href="https://www.github.com/Daganx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={GithubLogo} alt="" className="logo-presentation" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/letotdagan/"
+              target="_Blank"
+              rel="noopener noreferrer"
+            >
+              <img src={LinkedinLogo} alt="" className="logo-presentation" />
+            </a>
+            <a
+              href="https://www.x.com/d4g4nD3v"
+              target="_Blank"
+              rel="noopener noreferrer"
+            >
+              <img src={TwitterLogo} alt="" className="logo-presentation" />
+            </a>
+          </div>
           <div className="text-info">
             <h3
               onMouseEnter={() => setShowVideo(true)}

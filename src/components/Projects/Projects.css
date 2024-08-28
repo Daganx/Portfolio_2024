@@ -19,7 +19,7 @@
 }
 .project-container p {
   font-size: 4.5rem;
-  color: black;
+  color: rgb(3, 3, 3);
   cursor: pointer;
 }
 .project-preview {

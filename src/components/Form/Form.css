@@ -24,13 +24,17 @@
   border-radius: 5px;
 }
 .form-group textarea {
-  max-height: 250px;
+  height: 150px;
+  max-height: 190px;
   max-width: 400px;
+  min-width: 400px;
 }
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: orange;
   color: black;
+  outline: none;
+  border: 2px solid orange;
+  transition: border-color 0.3s ease-in-out;
 }
 .form-group span {
   color: red;
@@ -43,7 +47,13 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border: 2px solid transparent;
 }
 .contact-form button:hover {
-  background-color: #0b5f4e;
+  outline: none;
+  border: 2px solid rgb(3, 3, 3);
+}
+.contact-form button:focus {
+  outline: none;
+  border: 2px solid rgb(3, 3, 3);
 }
