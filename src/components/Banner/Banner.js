@@ -51,7 +51,7 @@ export default function Banner() {
           <source src={BordeauxVideo} type="video/mp4" />
         </video>
       )}
-      <div className="text-avatar-container">
+      <section className="text-avatar-container">
         <article className="text-container">
           <h1>{renderedName}</h1>
           <h2>Front-End Développeur _</h2>
@@ -126,7 +126,7 @@ export default function Banner() {
             loading="lazy"
           />
         </aside>
-      </div>
+      </section>
       <Bicycle />
     </section>
   );
