@@ -17,7 +17,7 @@
   gap: 10px;
   position: relative;
 }
-.project-container p {
+.project-container h2 {
   font-size: 4.5rem;
   color: rgb(3, 3, 3);
   cursor: pointer;

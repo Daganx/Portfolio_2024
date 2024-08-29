@@ -3,11 +3,11 @@
   border-bottom: 5px solid orange;
   background-color: white;
   color: black;
-  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding: 10px;
 }
 .logo-footer {
   height: 50px;

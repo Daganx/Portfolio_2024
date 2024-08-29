@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import Modal from "../Modal/Modal";
 import "./Projects.css";
 
@@ -43,7 +42,7 @@ export default function Projects() {
             }`}
             onClick={() => handleOpenModal(index)}
           >
-            <p>PROJET {project}</p>
+            <h2>PROJET {project}</h2>
           </article>
         ))}
       </section>
